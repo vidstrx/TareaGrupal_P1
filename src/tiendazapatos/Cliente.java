@@ -68,6 +68,15 @@ public class Cliente {
         return presupuesto;
     }
     
+    @Override
+    public String toString() {
+        return "Cuenta Cliente:\n" +
+                "Nombre = " + nombre + "\n" +
+                "Marca preferida = " + marcapreferida + "\n" +
+                "Color favorito = " + colorfavorito + "\n" +
+                "Talla = " + talla + "\n" +
+                "Presupuesto = " + presupuesto + "\n";
+    }
     
 }
 
