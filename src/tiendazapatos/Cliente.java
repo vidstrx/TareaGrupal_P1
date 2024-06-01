@@ -18,7 +18,6 @@ public class Cliente {
     public Cliente() {
     }
     
-    
 
     public Cliente(String nombre, String marcapreferida, String colorfavorito, int talla, int presupuesto) {
         this.nombre = nombre;
