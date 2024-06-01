@@ -9,5 +9,5 @@ package tiendazapatos;
  * @author PC
  */
 public class Cliente {
-    
+    String marca;
 }
