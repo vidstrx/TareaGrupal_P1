@@ -60,4 +60,34 @@ public class Tienda {
         this.cantidadDisponible = cantidadDisponible;
     }
     
+    public void mostrarMarcas(){
+        String [] marcas = new String[5];
+        marcas[0] = "Converse"; marcas[1] = "Adidas"; marcas[2] = "Puma";
+        marcas[3] = "Nike"; marcas[4] = "Vans";
+        System.out.println("Marcas disponibles: ");
+        for (int i = 0; i < marcas.length; i++) {
+                System.out.println((i+1) +") " + (marcas[i]));
+            }
+    }
+    
+    public void mostrarColores(){
+        String [] colores = new String[4];
+        colores[0] = "Blanco"; colores[1] = "Negro"; colores[2] = "Azul";
+        colores[3] = "Rojo";
+        System.out.println("Colores disponibles: ");
+        for (int i = 0; i < colores.length; i++) {
+                System.out.println((i+1) +") " + (colores[i]));
+            }
+    }
+    
+    public void mostrarTallas(){
+        int [] tallas = new int[5];
+        tallas[0] = 28; tallas[1] = 32; tallas[2] = 34;
+        tallas[3] = 38; tallas[4] = 40;
+        System.out.println("Tallas disponibles: ");
+        for (int i = 0; i < tallas.length; i++) {
+                System.out.println((i+1) +") " + (tallas[i]));
+            }
+    }
+    
 }
