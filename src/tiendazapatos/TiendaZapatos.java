@@ -9,7 +9,6 @@ public class TiendaZapatos {
         Scanner lea = new Scanner(System.in);
         Tienda tienda = new Tienda(); Cliente cliente = new Cliente();
         
-        // int precio = 0;
         System.out.println("----Bienvenido a la Tienda----");
         tienda.mostrarMarcas(); tienda.mostrarColores(); tienda.mostrarTallas();
         
@@ -54,6 +53,7 @@ public class TiendaZapatos {
         tienda.setColor(tienda.coloresDisp());
         tienda.setTallas(tienda.tallasDisp());
         
+        System.out.println("\n" + cliente);
         
         boolean encontrarMarca = buscarMarca(tienda, cliente); boolean encontrarColor = buscarColor(tienda, cliente);
         boolean encontrarTalla = buscarTalla(tienda, cliente);
@@ -73,7 +73,8 @@ public class TiendaZapatos {
             switch(eleccion){
                 case 1:
                 if (tienda.getPrecio() <= cliente.getPresupuesto()){
-                    System.out.println("\nGracias por su compra!");
+                    System.out.println("\n--------Factura----------\nNombre: " + cliente.getNombre() + "\nMarca comprada: " + cliente.getMarcapreferida() + "\nColor escogido: " + cliente.getColorfavorito() + "\nTalla escogida: " + cliente.getTalla() + "\nPrecio a pagar: " + tienda.getPrecio() + "\n-------------------------");
+                    System.out.println("Gracias por su compra!");
                 } else {
                     System.out.println("\nFondos insuficientes\nLe hace falta una cantidad de: " + (tienda.getPrecio() - cliente.getPresupuesto()) + ". Vuelva en cuando tenga mas presupuesto.");
                 }

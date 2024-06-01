@@ -7,17 +7,15 @@ public class Tienda {
     private String[] color;
     private int[] tallas;
     private int precio;
-    //private int[] cantidadDisponible;
 
     public Tienda() {
     }
     
-    public Tienda(String[] marcas, String[] color, int[] tallas, int precio, int[] cantidadDisponible) {
+    public Tienda(String[] marcas, String[] color, int[] tallas, int precio) {
         this.marcas = marcas;
         this.color = color;
         this.tallas = tallas;
         this.precio = precio;
-        //this.cantidadDisponible = cantidadDisponible;
     }
 
     public String[] getMarcas() {
@@ -36,10 +34,6 @@ public class Tienda {
         return precio;
     }
 
-    /*public int[] getCantidadDisponible() {
-        return cantidadDisponible;
-    }*/
-
     public void setMarcas(String[] marcas) {
         this.marcas = marcas;
     }
@@ -55,10 +49,6 @@ public class Tienda {
     public void setPrecio(int precio) {
         this.precio = precio;
     }
-
-    /*public void setCantidadDisponible(int[] cantidadDisponible) {
-        this.cantidadDisponible = cantidadDisponible;
-    }*/
     
     public void mostrarMarcas(){
         String [] marcas = new String[5];
@@ -110,7 +100,4 @@ public class Tienda {
         tallas[3] = 38; tallas[4] = 40;
         return tallas;
     }
-    
-    
-    
 }
