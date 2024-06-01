@@ -15,6 +15,11 @@ public class Cliente {
     private int talla;
     private int presupuesto;
 
+    public Cliente() {
+    }
+    
+    
+
     public Cliente(String nombre, String marcapreferida, String colorfavorito, int talla, int presupuesto) {
         this.nombre = nombre;
         this.marcapreferida = marcapreferida;
@@ -64,6 +69,15 @@ public class Cliente {
         return presupuesto;
     }
     
+    @Override
+    public String toString() {
+        return "Cuenta Cliente:\n" +
+                "Nombre = " + nombre + "\n" +
+                "Marca preferida = " + marcapreferida + "\n" +
+                "Color favorito = " + colorfavorito + "\n" +
+                "Talla = " + talla + "\n" +
+                "Presupuesto = " + presupuesto + "\n";
+    }
     
 }
 
