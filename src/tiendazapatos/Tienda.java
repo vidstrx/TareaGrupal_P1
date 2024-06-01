@@ -7,7 +7,7 @@ public class Tienda {
     private String[] color;
     private int[] tallas;
     private int precio;
-    private int[] cantidadDisponible;
+    //private int[] cantidadDisponible;
 
     public Tienda() {
     }
@@ -17,7 +17,7 @@ public class Tienda {
         this.color = color;
         this.tallas = tallas;
         this.precio = precio;
-        this.cantidadDisponible = cantidadDisponible;
+        //this.cantidadDisponible = cantidadDisponible;
     }
 
     public String[] getMarcas() {
@@ -36,9 +36,9 @@ public class Tienda {
         return precio;
     }
 
-    public int[] getCantidadDisponible() {
+    /*public int[] getCantidadDisponible() {
         return cantidadDisponible;
-    }
+    }*/
 
     public void setMarcas(String[] marcas) {
         this.marcas = marcas;
@@ -56,9 +56,9 @@ public class Tienda {
         this.precio = precio;
     }
 
-    public void setCantidadDisponible(int[] cantidadDisponible) {
+    /*public void setCantidadDisponible(int[] cantidadDisponible) {
         this.cantidadDisponible = cantidadDisponible;
-    }
+    }*/
     
     public void mostrarMarcas(){
         String [] marcas = new String[5];
@@ -89,5 +89,28 @@ public class Tienda {
                 System.out.println((i+1) +") " + (tallas[i]));
             }
     }
+    
+    public String[] MarcasDisp(){
+        String [] marcas = new String[5];
+        marcas[0] = "Converse"; marcas[1] = "Adidas"; marcas[2] = "Puma";
+        marcas[3] = "Nike"; marcas[4] = "Vans";
+        return marcas;
+    }
+    
+     public String[] coloresDisp(){
+        String [] colores = new String[4];
+        colores[0] = "Blanco"; colores[1] = "Negro"; colores[2] = "Azul";
+        colores[3] = "Rojo";
+        return colores;
+    }
+        
+    public int[] tallasDisp(){
+        int [] tallas = new int[5];
+        tallas[0] = 28; tallas[1] = 32; tallas[2] = 34;
+        tallas[3] = 38; tallas[4] = 40;
+        return tallas;
+    }
+    
+    
     
 }
