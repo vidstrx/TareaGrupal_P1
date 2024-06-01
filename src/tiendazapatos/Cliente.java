@@ -15,6 +15,10 @@ public class Cliente {
     private int talla;
     private int presupuesto;
 
+    public Cliente() {
+    }
+    
+
     public Cliente(String nombre, String marcapreferida, String colorfavorito, int talla, int presupuesto) {
         this.nombre = nombre;
         this.marcapreferida = marcapreferida;
